@@ -6,13 +6,13 @@ import requests
 import time
 from datetime import datetime
 
-# Configuration - Update these values
-API_URL = "http://127.0.0.1:5001/keepalive"  # Replace with your API endpoint
-PAYLOAD = {"message": "KEEP ALIVE"}  # Your POST data
+# Configuration - values
+API_URL = "https://cnn-classifier-api-server.onrender.com/keepalive"
+PAYLOAD = {"message": "KEEP ALIVE"}  # POST data
 HEADERS = {
     "Content-Type": "application/json"
 }
-INTERVAL_SECONDS = 5  # Time between requests
+INTERVAL_SECONDS = 15  # Time between requests
 MAX_RETRIES = 3  # Max retries for failed requests
 RETRY_DELAY = 2  # Seconds between retries
 
